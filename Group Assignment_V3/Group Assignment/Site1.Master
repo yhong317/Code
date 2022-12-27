@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Group_Assignment.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+		        <nav>
+			    <ul id="MenuItems">
+		    	    <li><a class="Menu" href="#Home">Home</a></li>
+				    <li>
+                        <div class="dropdown">
+                        <a class="dropbtn">Team Members</a>
+                          <div class="dropdown-content">
+                            <a href="#1">Beh Yong Sam</a>
+                            <a href="#2">Tan Yong Hong</a>
+                            <a href="#3">Lim Yu Ping</a>
+                            <a href="#4">Lin Jing You</a>
+                            <a href="#5">Yee Weng Yong</a>
+                          </div>
+                        </div>
+
+				    </li>
+				    <li><a class="Menu" href="#contact">Review</a></li>
+			    </ul>
+			    </nav> 
+
+            
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="footer">
+                <center>
+                    <ul>
+		    	    <li><a href="#Home"><img src="resources/home.png" />Home</a></li>
+				    <li>
+                        <div class="dropdown">
+                        <a class="dropbtn"><img src="resources/user.png" />Team Members</a>
+                          <div class="dropdown-content">
+                            <a href="#1">Beh Yong Sam</a>
+                            <a href="#2">Tan Yong Hong</a>
+                            <a href="#3">Lim Yu Ping</a>
+                            <a href="#4">Lin Jing You</a>
+                            <a href="#5">Yee Weng Yong</a>
+                          </div>
+                        </div>
+                    </li>
+				    <li><a href="#contact"><img src="resources/phone.png" />Review</a></li>
+			        </ul>
+                    <br />
+                    <div class="socialbtn">
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/resources/facebook.png" Height="40px" Width="40px" />
+                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/resources/instagram.png" Height="40px" Width="40px" />
+                        <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/resources/twitter.png" Height="40px" Width="40px" />
+                    </div>
+                    
+                </center>
+            </div>
+        </div>
+    </form>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: true,
+        });
+    </script>
+</body>
+</html>

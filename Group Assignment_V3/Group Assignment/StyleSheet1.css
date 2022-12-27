@@ -1,0 +1,285 @@
+﻿html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*---------navigation bar----------*/
+
+nav {
+	flex: 1;
+	text-align: right;
+	background-color:#222831;
+}
+
+ul {
+	display: inline-block;
+	list-style-type: none;
+}
+
+	ul li {
+		display: inline-block;
+		padding: 20px;
+		align-content: flex-end;
+	}
+
+a {
+	text-decoration: none;
+	color: #222831;
+	font-size: 25px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #222831;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+	.dropdown-content a {
+		color: #EEEEEE;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown-content a:hover {
+			background-color: rgba(0,0,0,0.2);
+		}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	color: #00ADB5;
+}
+
+li .Menu:hover {
+	color: #00ADB5;
+}
+
+
+
+/*---------footer----------*/
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 45px;
+	background-color: #222831;
+}
+
+	.footer img {
+		height: 20px;
+		width: 20px;
+		padding: 0px 5px 0px 40px;
+	}
+
+h1 {
+	color: #EEEEEE;
+}
+
+.socialbtn {
+	padding: 10px 0px 50px 0px;
+	justify-content: space-evenly;
+	display: flex;
+	width: 200px;
+}
+
+/*---------All Member----------*/
+
+.member {
+	max-width: auto;
+	margin: auto;
+	padding: 35px 40px 90px 40px;
+	background-color: #222831;
+	background-image: url(resources/background.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.row {
+	display: flex;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	align-content: center;
+}
+
+img {
+	width: 200px;
+	height: 250px;
+	opacity: 100%;
+}
+
+.each {
+	min-width: 250px;
+	width: 250px;
+	height: 350px;
+	border-radius: 25px;
+	background-color: #393E46;
+	border: 2px solid;
+	border-color: #00ADB5;
+	margin: 10px 80px 10px 80px;
+	padding: 20px;
+	font-size: 30px;
+	position: relative;
+	animation: move 8s ease-in-out 0s infinite;
+	animation-direction: alternate;
+}
+
+	.each h3 {
+		color: white;
+	}
+
+@keyframes move {
+	from {
+		right: -300px;
+	}
+
+	to {
+		right: 500px;
+	}
+}
+
+/*---------Each Member Detail----------*/
+
+.decription {
+	max-width: auto;
+	margin: auto;
+	background-color: #222831;
+}
+
+.col-2 {
+	flex-basis: 50%;
+	min-width: 400px;
+	padding: 35px 150px 90px 150px;
+	background-image: url(resources/img2.png);
+}
+
+.col-2-1 {
+	margin: 20px;
+	padding: 30px;
+	width: 90%;
+	height: 90%;
+	min-width: 350px;
+	background-color: rgba(57,62,70,0.7);
+	border-radius: 20px;
+}
+
+	.col-2-1 h1 {
+		font-size: 60px;
+		margin: 0;
+	}
+
+
+.col-1 {
+	flex-basis: 30%;
+	min-width: 350px;
+	background-image: url(resources/background2.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.eachDesc img {
+	width: 270px;
+	height: 300px;
+	opacity: 100%;
+	margin-top: 60px;
+	border-radius: 20px;
+}
+
+.eachDesc {
+	min-width: 300px;
+	width: 300px;
+	height: 375px;
+	background-image: url(resources/board.png);
+	background-size: 300px;
+	margin: auto;
+	margin-top: 70px;
+}
+
+p {
+	text-align: justify;
+	color: #EEEEEE;
+	opacity: 75%;
+	white-space: normal;
+}
+
+.viewbtn {
+	display: flex;
+	justify-content: space-around;
+	padding: 40px 0px 40px 0px;
+}
+
+hr {
+	color: #EEEEEE;
+	opacity: 10%;
+	margin: 0;
+}
+
+.descrow {
+	display: flex;
+	height: 550px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	align-content: center;
+}
+
+
+
+/*---------Customer Review----------*/
+.CustomerReview {
+	max-width: auto;
+	margin: auto;
+	background-color: #222831;
+}
+
+.col-3 h1 {
+	padding-left: 40px;
+}
+
+.col-3 img {
+	width: 80%;
+	padding: 100px;
+	min-width: 250px;
+	max-width: 400px;
+}
+
+.col-3 {
+	flex-basis: 50%;
+	min-width: 150px;
+	width: 80%;
+	padding: 70px 200px 70px 50px;
+	text-align: left;
+}
+
+.table {
+	flex-basis: 50%;
+	min-width: 200px;
+	width: 250px;
+	height: 500px;
+	border-radius: 25px;
+	background-color: #2E333B;
+	padding: 30px 200px 90px 100px;
+}
+
+
+.textbox {
+	border-radius: 8px;
+	color: #EEEEEE;
+	opacity: 50%;
+	height: 25px;
+	width: 350px;
+}
